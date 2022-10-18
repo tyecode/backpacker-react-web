@@ -81,7 +81,7 @@ const About = () => {
             <WhyChooseUs />
             <OurTeam />
             <Testimonial /> 
-Link
+
             {/* Work with us */}
 
             <section className="work-with-us">

@@ -1,17 +1,19 @@
+@use '../utils/' as *;
+
 .contact {
     position: relative;
     width: 100%;
     background-color: $background-1;
     display: flex;
     flex-direction: column;
-    margin-bottom: 80px;
+    margin-bottom: rem(80);
 
     &-hero {
         position: relative;
         width: 100%;
-        height:  calc(100vh - 60px);
+        height:  calc(100vh - rem(60));
         display: flex;
-        justify-content: start;
+        justify-content: flex-start;
         align-items: center;
         background-color: $gray;
         background-image: url("../../assets/images/hero/contact.jpg");
@@ -31,13 +33,13 @@
 
         &--content {
             position: relative;
-            width: 800px;
+            width: rem(800);
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
 
-            @media screen and (max-width: 980px) {
+            @include breakpoint-down(rem(980)) {
                 width: 100%;
                 align-items: center;
             }
@@ -55,11 +57,11 @@
             padding: 4rem;
             @include box-shadow;
 
-            @media screen and (max-width: 560px) {
+            @include breakpoint-down(rem(560)) {
                 padding: 3rem;
             }
 
-            @media screen and (max-width: 460px) {
+            @include breakpoint-down(rem(460)) {
                 padding: 2rem;
             }
 
@@ -71,14 +73,14 @@
 
             input[type=text], textarea {
                 width: 100%;
-                padding: 12px;
+                padding: rem(12);
                 font-family: 'Prompt', sans-serif;
-                font-size: 14px;
+                font-size: rem(14);
                 font-weight: 300;
-                border: 1px solid $gray;
+                border: rem(1) solid $gray;
                 box-sizing: border-box;
-                margin-top: 6px;
-                margin-bottom: 16px;
+                margin-top: rem(6);
+                margin-bottom: rem(16);
                 resize: none;
                 outline: none;
             }
@@ -87,32 +89,32 @@
                 color: $white;
                 font-weight: 300;
                 background-color: $secondary;
-                padding: 13px 50px;
+                padding: rem(13) rem(50);
                 border: none;
                 text-transform: uppercase;
                 cursor: pointer;
                 margin-top: .4rem;
 
-                @media screen and (max-width: 960px) {
+                @include breakpoint-down(rem(960)) {
                     width: fit-content;
                 }
 
-                @media screen and (max-width: 320px) {
+                @include breakpoint-down(rem(320)) {
                     width: 100%;
                     padding-left: 0;
                     padding-right: 0;
-                }
+                }    
             }
 
             textarea {
-                height: 250px;
+                height: rem(250);
             }
         }
         
         .row {
             align-items: center;
 
-            @media screen and (max-width: 960px) {
+            @include breakpoint-down(rem(960)) {
                 flex-direction: column;
             }
         }
@@ -120,7 +122,7 @@
         .col-4 {
             margin-left: 0;
 
-            @media screen and (max-width: 960px) {
+            @include breakpoint-down(rem(960)) {
                 width: fit-content;
                 height: fit-content;
                 display: flex;
@@ -133,59 +135,59 @@
                 display: flex;
                 align-items: center;
 
-                @media screen and (max-width: 960px) {
+                @include breakpoint-down(rem(960)) {
                     margin: 1rem 0;
                 }
 
-                @media screen and (max-width: 320px) {
+                @include breakpoint-down(rem(320)) {
                     flex-direction: column;
                 }
 
                 i {
-                    font-size: 40px;
-                    width: 70px;
+                    font-size: rem(40);
+                    width: rem(70);
                     text-align: center;
 
-                    @media screen and (max-width: 1200px) {
-                        font-size: 36px;  
+                    @include breakpoint-down(rem(1200)) {
+                        font-size: rem(36); 
                     }
 
-                    @media screen and (max-width: 640px) {
-                        font-size: 32px;
+                    @include breakpoint-down(rem(640)) {
+                        font-size: rem(32);
                     }
 
-                    @media screen and (max-width: 320px) {
-                        margin-bottom: .5rem;                    
+                    @include breakpoint-down(rem(320)) {
+                        margin-bottom: .5rem; 
                     }
                 }
 
                 h3 {
                     font-family: 'Prompt', sans-serif;
-                    font-size: 22px;
+                    font-size: rem(22);
                     font-weight: 500;
                     letter-spacing: 0;
 
-                    @media screen and (max-width: 1200px) {
-                        font-size: 20px;
+                    @include breakpoint-down(rem(1200)) {
+                        font-size: rem(20);
                     }
 
-                    @media screen and (max-width: 640px) {
-                        font-size: 18px;
+                    @include breakpoint-down(rem(640)) {
+                        font-size: rem(18);
                     }
                 }
 
                 p {
-                    font-size: 18px;
+                    font-size: rem(18);
                     font-weight: 300;
                     letter-spacing: 0;
                     opacity: .7;
 
-                    @media screen and (max-width: 1200px) {
-                        font-size: 16px;
+                    @include breakpoint-down(rem(1200)) {
+                        font-size: rem(16);
                     }
 
-                    @media screen and (max-width: 640px) {
-                        font-size: 14px;
+                    @include breakpoint-down(rem(640)) {
+                        font-size: rem(14);
                     }
                 }
             }
@@ -194,21 +196,21 @@
         .col-6 {
             margin-right: 0;
 
-            @media screen and (max-width: 960px) {
+            @include breakpoint-down(rem(960)) {
                 margin: 0;
                 width: 70%;
             }
 
-            @media screen and (max-width: 840px) {
+            @include breakpoint-down(rem(840)) {
                 margin: 0;
                 width: 80%;
             }
 
-            @media screen and (max-width: 720px) {
+            @include breakpoint-down(rem(720)) {
                 width: 90%;
             }
 
-            @media screen and (max-width: 560px) {
+            @include breakpoint-down(rem(560)) {
                 width: 100%;
             }
         }

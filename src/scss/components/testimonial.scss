@@ -1,3 +1,5 @@
+@use '../utils/' as *;
+
 .testimonial {
     width: 100%;
     background-color: $background-1;
@@ -15,65 +17,63 @@
         overflow: hidden;
         text-align: center;
 
-        @media screen and (max-width: 1320px) {
+        @include breakpoint-down(rem(1320)) {
             width: 80%;
         }
 
-        @media screen and (max-width: 860px) {
+        @include breakpoint-down(rem(860)) {
             width: 90%;
         }
 
         .swiper-wrapper {
             display: flex;
             align-items: center;
-            width: 900px;
+            width: rem(900);
 
-            @media screen and (max-width: 1080px) {
+            @include breakpoint-down(rem(1080)) {
                 width: 90%;
             }
         
-        .swiper-slide {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            background: transparent;
-            padding: 3rem;
+            .swiper-slide {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                background: transparent;
+                padding: 3rem;
 
-            @media screen and (max-width: 1320px) {
-                width: 100%;
+                @include breakpoint-down(rem(1320)) {
+                    width: 100%;
+                }
+
+                @include breakpoint-down(rem(720)) {
+                    padding-bottom: 6rem;
+                }
             }
-
-            @media screen and (max-width: 720px) {
-                width: 100%;
-                padding-bottom: 6rem;
-            }
-
-        }
 
             h3 {
-                font-size: 30px;
+                font-size: rem(30);
                 font-weight: 500;
                 margin: 0;
 
-                @media screen and (max-width: 720px) {
-                    font-size: 26px;
+                @include breakpoint-down(rem(720)) {
+                    font-size: rem(26);
                 }
             }
 
             p {
                 margin: 1rem;
 
-                @media screen and (max-width: 720px) {
-                    font-size: 16px;
+                @include breakpoint-down(rem(720)) {
+                    font-size: rem(16);
                 }
             }
 
             i {
-                font-size: 34px;
+                font-size: rem(34);
                 color: $secondary;
 
-                @media screen and (max-width: 1080px) {
-                    font-size: 28px;
+                @include breakpoint-down(rem(1080)) {
+                    font-size: rem(28);
                 }
             }
 

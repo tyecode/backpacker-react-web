@@ -1,0 +1,26 @@
+@use 'functions' as *;
+
+@mixin box-shadow {
+    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0 rem(2) rem(8) 0;
+            box-shadow: rgba(99, 99, 99, 0.2) 0 rem(2) rem(8) 0;
+}
+
+@mixin swiper-box-shadow {
+    -webkit-box-shadow: 0 0 rem(45) rem(10) rgba(0,0,0,0.1);
+            box-shadow: 0 0 rem(45) rem(10) rgba(0,0,0,0.1);
+}
+
+@mixin team-box-shadow {
+    -webkit-box-shadow: 0 0 rem(45) rem(10) rgba(0,0,0,0.1);
+            box-shadow: 0 0 rem(45) rem(10) rgba(0,0,0,0.1);
+}
+
+@mixin focus-box-shadow {
+    -webkit-box-shadow: 
+        rgba(14, 30, 37, 0.12) 0 rem(2) rem(4) 0,
+        rgba(14, 30, 37, 0.32) 0 rem(2) rem(16) 0;
+    box-shadow: 
+        rgba(14, 30, 37, 0.12) 0 rem(2) rem(4) 0,
+        rgba(14, 30, 37, 0.32) 0 rem(2) rem(16) 0;
+}
+

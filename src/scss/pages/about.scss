@@ -1,3 +1,5 @@
+@use '../utils/' as *;
+
 .about {
     position: relative;
     width: 100%;
@@ -6,9 +8,9 @@
     &-hero {
         position: relative;
         width: 100%;
-        height:  calc(100vh - 60px);
+        height:  calc(100vh - rem(60));
         display: flex;
-        justify-content: start;
+        justify-content: flex-start;
         align-items: center;
         background-color: $gray;
         background-image: url("../../assets/images/hero/about.jpg");
@@ -28,13 +30,13 @@
 
         &--content {
             position: relative;
-            width: 800px;
+            width: rem(800);
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
 
-            @media screen and (max-width: 980px) {
+            @include breakpoint-down(rem(980)) {
                 width: 100%;
                 align-items: center;
             }
@@ -46,7 +48,7 @@
         width: 100%;
         padding: 7rem 0;
 
-        @media screen and (max-width: 1200px) {
+        @include breakpoint-down(rem(1200)) {
             text-align: center;
             padding: 4rem 0;
         }
@@ -54,29 +56,29 @@
         .content-header {
             text-align: start;
 
-            @media screen and (max-width: 1200px) {
+            @include breakpoint-down(rem(1200)) {
                 text-align: center;
             }
         }
 
         &--img {
-            width: 520px;
-            height: 680px;
+            width: rem(520);
+            height: rem(680);
             border: 0;
             outline: none;
             margin: 0 auto;
 
-            @media screen and (max-width: 1200px) {
+            @include breakpoint-down(rem(1200)) {
                 padding-top: 3rem;
-                width: 450px;
+                width: rem(450);
                 height: auto;
                 margin-bottom: 3rem;
 
-                @media screen and (max-width: 860px) {
+                @include breakpoint-down(rem(860)) {
                     width: 80%;
                 }
 
-                @media screen and (max-width: 480px) {
+                @include breakpoint-down(rem(480)) {
                     width: 90%;
                 }
             }
@@ -90,7 +92,7 @@
 
         .row {
 
-            @media screen and (max-width: 1200px) {
+            @include breakpoint-down(rem(1200)) {
                 flex-direction: column-reverse;
             }
         }
@@ -98,12 +100,12 @@
         .col-5:first-child {
             margin-left: 0;
 
-            @media screen and (max-width: 1200px) {
+            @include breakpoint-down(rem(1200)) {
                 margin: 0;
                 width: 80%;
             }
 
-            @media screen and (max-width: 480px) {
+            @include breakpoint-down(rem(480)) {
                 width: 90%;
             }
         }
@@ -111,11 +113,11 @@
         .col-5:last-child {
             margin-right: 0;
 
-            @media screen and (max-width: 1200px) {
+            @include breakpoint-down(rem(1200)) {
                 width: 80%;
             }
 
-            @media screen and (max-width: 720px) {
+            @include breakpoint-down(rem(720)) {
                 margin: 0;
                 width: 90%;
             }
@@ -134,15 +136,15 @@
         padding: 0 8rem;
         text-align: center;
 
-        @media screen and (max-width: 1320px) {
+        @include breakpoint-down(rem(1320)) {
             padding: 0 4rem;
         }
 
-        @media screen and (max-width: 720px) {
+        @include breakpoint-down(rem(720)) {
             padding: 0 2rem;
         }
 
-        @media screen and (max-width: 540px) {
+        @include breakpoint-down(rem(540)) {
             padding: 0 1rem;
         }
     }
@@ -155,130 +157,125 @@
         flex-wrap: wrap;
         margin-top: 4rem;
 
-        @media screen and (max-width: 1180px) {
+        @include breakpoint-down(rem(1180)) {
             padding: 0 3rem;
         }
 
-        @media screen and (max-width: 1120px) {
+        @include breakpoint-down(rem(1120)) {
             padding: 0;
         }
 
         .teams-wrapper {
-            width: 210px;
-            height: 300px;
+            width: rem(210);
+            height: rem(300);
             background-color: transparent;
-            border-radius: 15px;
+            border-radius: rem(15);
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
             text-align: center;
+            padding-top: rem(30);
 
-            @media screen and (max-width: 1180px) {
-                width: 270px;
-                height: 350px;
+            @include breakpoint-down(rem(1180)) {
+                width: rem(270);
+                height: rem(350);
                 margin: 1rem;
                 padding: 1rem;
                 letter-spacing: 0;
             }
 
-            @media screen and (max-width: 1120px) {
+            @include breakpoint-down(rem(1120)) {
                 margin: 0;
             }
 
-            @media screen and (max-width: 720px) {
-                width: 240px;
+            @include breakpoint-down(rem(720)) {
+                width: rem(240);
             }
 
             .teams-img {
                 display: block;
-                width: 110px;
-                height: 110px;
+                width: rem(110);
+                height: rem(110);
                 background-color: $gray;
                 border-radius: 50%;
                 margin: .5rem;
                 margin-top: 0;
                 overflow: hidden;
 
-                @media screen and (max-width: 1180px) {
-                    width: 150px;
-                    height: 150px;
+                @include breakpoint-down(rem(1180)) {
+                    width: rem(150);
+                    height: rem(150);
                     margin: 1rem;
                 }
 
-                @media screen and (max-width: 720px) {
-                    width: 120px;
-                    height: 120px;
+                @include breakpoint-down(rem(720)) {
+                    width: rem(120);
+                    height: rem(120);
                 }
 
                 img {
                     opacity: .9;
                 }
-                
-                .team-1 {
-                    opacity: 1 !important;
-                }
             }
-
 
             .teams-name {
                 width: 100%;
-                height: 50px;
-                margin-top: .8rem;
-                font-size: 16px;
+                height: rem(50);
+                margin-top: rem(5);
+                font-size: rem(16);
                 text-transform: uppercase;
                 text-align: center;
                 display: flex;
                 justify-content: center;
                 align-items: center;
 
-                @media screen and (max-width: 720px) {
-                    font-size: 14px;
+                @include breakpoint-down(rem(720)) {
+                    font-size: rem(14);
                 }
             }
 
             .teams-position {
-                font-size: 14px;
+                font-size: rem(14);
                 opacity: .8;
                 letter-spacing: 0;
-                margin-top: .3rem;
+                margin-top: rem(-8);
 
-                @media screen and (max-width: 1180px) {
-                    font-size: 16px;
+                @include breakpoint-down(rem(1180)) {
+                    font-size: rem(16);
                 }
 
-                @media screen and (max-width: 720px) {
-                    font-size: 14px;
+                @include breakpoint-down(rem(720)) {
+                    font-size: rem(14);
                 }
             }
 
             .teams-social-media {
-                width: 120px;
+                width: rem(120);
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
                 margin-top: 1rem;
 
-                @media screen and (max-width: 1180px) {
-                    width: 140px;
+                @include breakpoint-down(rem(1180)) {
+                    width: rem(140);
                 }
 
-                @media screen and (max-width: 720px) {
-                    width: 120px;
+                @include breakpoint-down(rem(720)) {
+                    width: rem((120));
                 }
                 
                 i {
-                    font-size: 18px;
+                    font-size: rem(18);
                     opacity: .7;
                     cursor: pointer;
                     transition: .3s all ease-in-out;
 
-                    @media screen and (max-width: 1180px) {
-                        font-size: 20px;
+                    @include breakpoint-down(rem(1180)) {
+                        font-size: rem(20);
                     }
 
-                    @media screen and (max-width: 720px) {
-                        width: 18px;
+                    @include breakpoint-down(rem(720)) {
+                        width: rem(18);
                     }
                 }
 
@@ -295,25 +292,25 @@
     background-color: $background-2;
     padding: 7rem 0;
     margin: 0 !important;
-    margin-bottom: 60px !important;
+    margin-bottom: rem(60) !important;
 
     &--img {
-        width: 480px;
-        height: 640px;
+        width: rem(480);
+        height: rem(640);
         display: flex;
         justify-content: center;
         align-items: center;
 
-        @media screen and (max-width: 1180px) {
+        @include breakpoint-down(rem(1180)) {
             width: 100%;
             height: auto;
         }
 
-        @media screen and (max-width: 920px) {
+        @include breakpoint-down(rem(920)) {
             width: 60%;
         }
 
-        @media screen and (max-width: 480px) {
+        @include breakpoint-down(rem(480)) {
             width: 80%;
         }
 
@@ -330,7 +327,7 @@
 
     .row {
 
-        @media screen and (max-width: 920px) {
+        @include breakpoint-down(rem(920)) {
             flex-direction: column;
             text-align: center;
         }
@@ -344,7 +341,7 @@
         display: flex;
         justify-content: flex-end;
 
-        @media screen and (max-width: 920px) {
+        @include breakpoint-down(rem(920)) {
             width: 100%;
             justify-content: center;
         }
@@ -355,7 +352,7 @@
         flex-direction: column;
         justify-content: center;
 
-        @media screen and (max-width: 920px) {
+        @include breakpoint-down(rem(920)) {
             width: 100%;
             flex-direction: column;
             justify-content: center;

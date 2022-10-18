@@ -1,3 +1,5 @@
+@use '../utils/' as *;
+
 .hero-btn {
     display: block;
     position: relative;
@@ -14,7 +16,7 @@
             transform: translateY(0);
         }
         100% {
-            transform: translateY(-6px);
+            transform: translateY(rem(-6));
         }
     }
 }

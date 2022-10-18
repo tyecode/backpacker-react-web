@@ -23,7 +23,7 @@ const OurTeam = () => {
             <div className="container">
                 <div className="our-team--teams">
                     <div className="teams-wrapper">
-                        <div className="teams-img"><img className="team-1" src={Team1} alt="" /></div>
+                        <div className="teams-img"><img src={Team1} alt="" /></div>
                         <div className="teams-name">Darcy Snyder</div>
                         <div className="teams-position">Founder & CEO</div>
                         <div className="teams-social-media">
@@ -34,7 +34,7 @@ const OurTeam = () => {
                         </div>
                     </div>
                     <div className="teams-wrapper">
-                        <div className="teams-img"><img className="team-1" src={Team2} alt="" /></div>
+                        <div className="teams-img"><img src={Team2} alt="" /></div>
                         <div className="teams-name">Michelle Sutton</div>
                         <div className="teams-position">Office & Accounts Manager</div>
                         <div className="teams-social-media">

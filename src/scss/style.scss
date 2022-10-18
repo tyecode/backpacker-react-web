@@ -1,4 +1,9 @@
-@import './app';
+// Import Styles
+
+@forward 'utils';
+@forward 'base';
+@forward 'components';
+@forward 'pages';
 
 // Import Fonts
 
@@ -10,22 +15,3 @@
 // Import Font-awesome
 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
-
-// Import Components
-
-@import './components/animations';
-@import './components/buttons';
-@import './components/mixins';
-@import './components/typography';
-@import './components/navbar';
-@import './components/footer';
-@import './components/carousel';
-@import './components/testimonial';
-
-// Import Pages Section
-
-@import './sections/home';
-@import './sections/about';
-@import './sections/contact';
-@import './sections/experience';
-@import './sections/destinations';

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 const Navbar = () => {
     const [height, setHeight] = useState(false);
@@ -32,13 +32,33 @@ const Navbar = () => {
         <div className="navbar" id="nav" style={{height: height ? '60px' : '100px'}}>
         <div className="container">
             <nav>
-                <div className="logo"><Link to='/'>Backpacker</Link></div>
+                <div className="logo">
+                    <Link to='/'>
+                        Backpacker
+                    </Link>
+                </div>
                 <div className={isActive ? "nav-list fadeIn" : "nav-list fadeOut"} style={{display: isActive ? "block" : styleDisplay}}>
                     <ul>
-                        <li><Link to='/about'>About us</Link></li>
-                        <li><Link to='/experience'>Our experience</Link></li>
-                        <li><Link to='/destinations'>Destinations</Link></li>
-                        <li><Link to='/contact'>Contact us</Link></li>
+                        <li>
+                            <NavLink to='/about' className={({ isActive }) => isActive ? "active" : ""}>
+                                About us
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to='/experience' className={({ isActive }) => isActive ? "active" : ""}>
+                                Our experience
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to='/destinations' className={({ isActive }) => isActive ? "active" : ""}>
+                                Destinations
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to='/contact' className={({ isActive }) => isActive ? "active" : ""}>
+                                Contact us
+                            </NavLink>
+                        </li>
                     </ul>
                 </div>
   

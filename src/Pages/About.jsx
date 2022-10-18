@@ -1,10 +1,16 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+
+// Import Components
+
 import Testimonial from "../Components/Testimonial";
+import WhyChooseUs from "../Components/WhyChooseUs";
+import OurTeam from "../Components/OurTeam";
+
+// Import Assets
+
 import Image3 from "../assets/images/img-3.jpg";
 import Image4 from "../assets/images/img-4.jpg";
-import OurTeam from "../Components/OurTeam";
-import { Link } from "react-router-dom";
-import WhyChooseUs from "../Components/WhyChooseUs";
 
 const About = () => {
     const [backToTopButton, setBackToTopButton] = useState(false);

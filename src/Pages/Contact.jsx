@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+
+// Import Components
+
 import Form from "../Components/Form";
 import Testimonial from "../Components/Testimonial";
-import { Link } from "react-router-dom";
 
 const Contact = () => {
     const [backToTopButton, setBackToTopButton] = useState(false);

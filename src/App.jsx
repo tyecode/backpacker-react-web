@@ -1,14 +1,21 @@
 import React from 'react';
 import './scss/style.scss';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+// Import Components
+
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
+import ScrollToTop from './Components/ScrollToTop';
+
+// Import Pages
+
 import Home from './Pages/Home';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
 import Destinations from './Pages/Destinations';
 import Experience from './Pages/Experience';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import ScrollToTop from './Components/ScrollToTop';
+
 
 const App = () => {
   

@@ -1,5 +1,11 @@
 import React, { useState, useEffect } from "react";
+
+// Import Components
+
 import Testimonial from "../Components/Testimonial";
+
+// Import Assets
+
 import CaliforniaImage from "../assets/images/packages/california.jpg";
 import RomeImage from "../assets/images/packages/rome.jpg";
 import SouthIslandImage from "../assets/images/packages/south-island.jpg";

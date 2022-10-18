@@ -1,5 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
+// Import Assets
+
 import VideoHover from "../assets/videos/video-hero.mp4";
 
 const Home = () => {

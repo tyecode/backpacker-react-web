@@ -1,4 +1,7 @@
 import React from "react";
+
+// Import Assets
+
 import Team1 from "../assets/images/teams/team-1.jpg";
 import Team2 from "../assets/images/teams/team-2.jpg";
 import Team3 from "../assets/images/teams/team-3.jpg";

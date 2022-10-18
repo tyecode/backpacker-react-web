@@ -1,5 +1,12 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+
+// Import Components
+
 import Testimonial from "../Components/Testimonial";
+
+// Import Assets
+
 import RecentTripsImage1 from "../assets/images/recent-trips/img-1.jpg"
 import RecentTripsImage2 from "../assets/images/recent-trips/img-2.jpg"
 import RecentTripsImage3 from "../assets/images/recent-trips/img-3.jpg"
@@ -8,7 +15,6 @@ import RecentTripsImage5 from "../assets/images/recent-trips/img-5.jpg"
 import RecentTripsImage6 from "../assets/images/recent-trips/img-6.jpg"
 import Image1 from "../assets/images/img-1.jpg"
 import Image2 from "../assets/images/img-2.jpg"
-import { Link } from "react-router-dom";
 
 const Experience = () => {
     const [backToTopButton, setBackToTopButton] = useState(false);

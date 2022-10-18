@@ -13,7 +13,6 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "prefix": "postcss src/style.css --use=autoprefixer --map=false --output=src/style.css",
     "start": "react-scripts start",
     "build": "npm run prefix && react-scripts build",
     "test": "react-scripts test",

@@ -1,8 +1,8 @@
 {
   "name": "backpacker-react-web",
   "version": "0.1.0",
-  "private": false,
-  "homepage": "https://{username}.github.io/",
+  "private": true,
+  "homepage": "https://tyecode.github.io/backpacker-react-web/",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

@@ -1,6 +1,6 @@
 import React from 'react';
 import './scss/style.scss';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 // Import Components
 
@@ -22,18 +22,16 @@ const App = () => {
 
   return (
     <>
-      <BrowserRouter>
       <ScrollToTop />
-        <Navbar />
-        <Routes>
-          <Route index path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/destinations" element={<Destinations />} />
-          <Route path="/experience" element={<Experience />} />
-        </Routes>
-        <Footer />
-      </BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route index path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/destinations" element={<Destinations />} />
+        <Route path="/experience" element={<Experience />} />
+      </Routes>
+      <Footer />
     </>
   );
 }

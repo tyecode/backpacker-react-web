@@ -2,7 +2,7 @@
   "name": "backpacker-react-web",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://tyecode.github.io/backpacker-react-web/",
+  "homepage": "https://tyecode.github.io/backpacker-react-web",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
